@@ -5,16 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link href="https://cdn.tailwindcss.com" rel="stylesheet"> -->
     <script src="https://cdn.tailwindcss.com"></script>
-
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="overflow-hidden flex  justify-center  " style="background: #edf2f7;">
-    <div class="h-screen bg-gray-100 flex flex-col items-center justify-between  ">
+<body class="overflow-hidden" style="background: #edf2f7;">
+    <div class="bg-gray-100 h-screen max-w-xl m-auto flex flex-col items-center justify-between">
 
-        <div class="relative max-w-xl w-full h-36 bg-white rounded-lg shadow-lg overflow-hidde mb-10">
+        <div class="relative max-w-xl w-full h-36 bg-white rounded-lg shadow-lg overflow-hidde mb-20">
             <div class="absolute inset-0 rounded-lg overflow-hidden bg-red-200">
                 <img src="image/capa.jpg" class="object-cover w-full h-full" alt="">
                 <div class="absolute inset-0 backdrop backdrop-blur-10 bg-gradient-to-b from-transparent to-black">
@@ -46,9 +44,9 @@
 
 
         <section
-        class=" relative overflow-hidde w-full h-40 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-4">
-        <div class="absolute inset-0 overflow-hidden ">
-            <img src="image/baner-redes-scoias.jpg" class="object-fill w-full h-full" alt="">
+            class=" relative overflow-hidde w-full h-40 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-4">
+            <div class="absolute inset-0 rounded-lg overflow-hidden ">
+                <img src="image/baner-redes-scoias.jpg" class="object-fill w-full h-full" alt="">
 
                 <div
                     class="absolute inset-0 -bottom-4 left-0 w-full  flex flex-col  justify-center px-10 gap-2 flex-wrap z-10 text-white pt-12">
@@ -116,13 +114,14 @@
                 </div>
             </div>
             <div>
-                <div class="relative  bg-gray-200">
+
+                <div class="relative h-1 bg-gray-200">
                     <input
                         class="range-slider  appearance-none  rounded-lg overflow-hidden  bg-green-500 absolute h-full w-1/2"
                         type="range" min="1" max="100" step="1" value="15" />
-                   
+                    <!-- <input class="range-slider w-64 h-3 rounded-lg overflow-hidden appearance-none bg-gray-400" type="range" min="1" max="100" step="1" value="15" /> -->
                     <div class="absolute h-full w-1/2 bg-green-500 flex items-center justify-end">
-                    
+                        <!-- <div class="rounded-full w-3 h-3 bg-white shadow"></div> -->
 
                     </div>
                 </div>
@@ -169,9 +168,9 @@
             </div>
 
         </div>
-      <audio id="audio" src="" type="audio/mpeg" ></audio>
+
     </div>
-    
+    <audio id="audio" src="" type="audio/mpeg"></audio>
     <script src="script.js"></script>
 </body>
 
