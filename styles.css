@@ -1,0 +1,55 @@
+
+/* Estilo para o cursor */
+.range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+
+    background: #4CAF50; /* Verde */
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.range-slider::-moz-range-thumb {
+ 
+    background: #4CAF50; /* Verde */
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Estilo para a barra de progresso antes do cursor */
+.range-slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right, #4CAF50, #4CAF50) no-repeat;
+}
+
+.range-slider::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    background: #d3d3d3;
+}
+
+/* Estilo para a barra de progresso do Firefox */
+.range-slider::-moz-range-progress {
+    background: #4CAF50; /* Verde */
+    height: 8px;
+}
+
+/* Ajuste para o IE */
+.range-slider::-ms-track {
+    width: 100%;
+    height: 8px;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+.range-slider::-ms-fill-lower {
+    background: #4CAF50; /* Verde */
+    border-radius: 5px;
+}
+
+.range-slider::-ms-fill-upper {
+    background: #d3d3d3;
+    border-radius: 5px;
+}
